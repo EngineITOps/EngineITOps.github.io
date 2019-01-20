@@ -1,0 +1,43 @@
+---
+layout: default
+---
+
+<div>
+  {% for post in paginator.posts %}
+  <article class="post">
+	<h1>
+	  <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}
+	  </a>
+	</h1>
+
+	<div class="date">
+	  {% if post.author %}
+	  by {{ post.author|capitalize }}
+	  {% endif %}
+	  <div style="float: right;">
+		{{ post.date | date: "%B %e, %Y" }}
+	  </div>
+	</div>
+
+	<div class="entry">
+      {{ post.excerpt }}
+	</div>
+
+  </article>
+  {% endfor %}
+</div>
+
+<div style="text-align:center">
+  {% if paginator.total_pages > 1 %}
+  {% if paginator.previous_page %}
+  <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">
+    <i class="fa fa-arrow-circle-left fa-3x" aria-hidden="true"></i>
+  </a>
+  {% endif %}
+  {% if paginator.next_page %}
+  <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">
+	<i class="fa fa-arrow-circle-right fa-3x" aria-hidden="true"> </i>
+  </a>
+  {% endif %}
+  {% endif %}
+</div>
