@@ -9,20 +9,20 @@ comments: true
 # The Ultimate Docker Cheatsheets
 
 Full Dockercheatsheets 
-![full](https://github.com/sangam14/dockercheatsheets/blob/master/dockercheatsheet8.png)
+![full](/images/post/dockercheatsheet8.png)
 
  Container Management Commands 
-![container_management](https://github.com/sangam14/dockercheatsheets/blob/master/dockercheatsheet1.png)
+![container_management](/images/post/dockercheatsheet1.png)
 
 Inspecting The Container 
-![Inspecting The Container](https://github.com/sangam14/dockercheatsheets/blob/master/dockercheatsheet3.png)
-![Interacting with Container1](https://github.com/sangam14/dockercheatsheets/blob/master/dockercheatsheet4.png)
+![Inspecting The Container](/images/post/dockercheatsheet3.png)
+![Interacting with Container1](/images/post/dockercheatsheet4.png)
  Image Management Commands 
- ![image management commands](https://github.com/sangam14/dockercheatsheets/blob/master/dockercheatsheet5.png)
+ ![image management commands](/images/post/dockercheatsheet5.png)
  Image Transfer Comnands 
- ![Image Transfer Comnands](https://github.com/sangam14/dockercheatsheets/blob/master/dockercheatsheet6.png)
+ ![Image Transfer Comnands](/images/post/dockercheatsheet6.png)
  Builder Main Commands
-![Builder Main Commands](https://github.com/sangam14/dockercheatsheets/blob/master/dockercheatsheet7.png)
+![Builder Main Commands](/images/post/dockercheatsheet7.png)
 
 
 
