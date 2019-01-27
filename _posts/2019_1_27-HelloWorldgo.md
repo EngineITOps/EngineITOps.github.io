@@ -9,7 +9,6 @@ comments: true
 
 ## Lets Start With First Hello world - Go Program
 
-Author - Sangam Biradar
 
 
 -----
