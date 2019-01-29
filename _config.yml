@@ -14,12 +14,12 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: ENGINEITOPS
-email: 
+email: smbiraadr14@gmail.com
 author: sangam biradar
 description: >- # this means to ignore newlines until "baseurl:"
-  Indian Web Developer, looking for a position to fit himself in software industry. Loves Linux systems and open-source. Open to remote works. contact <a href="https://twitter.com/thisisabdus">@thisisabdus</a>
+Trending
 baseurl:  # the subpath of your site, e.g. /blog
-url: "https://abdusdev.me" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://engineITops.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: 
 github_username:  sangam14
 disqus_id: #blog-abdus
