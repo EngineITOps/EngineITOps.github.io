@@ -1,0 +1,17 @@
+---
+layout: page
+title: Timeline
+permalink: /timeline/
+excerpt: A timeline-styled page where I list all good things I've accomplished. I personally like this page of my website!
+---
+
+<div class="timeline">
+    {% for tl in site.data.timeline %}
+        <div class="container">
+            <div class="content">
+                <h3>{{ tl.datetime }}</h3>
+                <p>{{ tl.description }}</p>
+            </div>
+        </div>
+    {% endfor %}
+</div>
