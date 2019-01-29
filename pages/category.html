@@ -1,0 +1,35 @@
+---
+    layout: page
+    title: categories
+    permalink: /categories/
+---
+    
+<section>
+    {% for category in site.categories %}
+        <h3 id="{{ category[0] | downcase | url_escape | strip | replace: ' ', '-' }}">{{ category[0] | camelcase }}</h3>
+        <div>
+            {% assign pages_list = category[1] %}
+            {% for post in pages_list %}
+                {% if post.title != null %}
+                <div class="blog-posts">
+                    {% if group == null or group == post.group %}
+                    <div class="post">
+                        <div class="blog-title">
+                            {% if post.link_post %}
+                                <a href="{{ post.link_post }}">{{ post.title }}</a>
+                                <span>Medium&neArr; &middot; {{ post.date | date: "%b %d, %y" }}</span>
+                            {% else %}
+                                <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+                                <span>{{ post.date | date: "%b %d, %y" }}</span>
+                            {% endif %}
+                        </div>
+                    </div>
+                    {% endif %}
+                </div>
+                {% endif %}
+            {% endfor %}
+            {% assign pages_list = nil %}
+            {% assign group = nil %}
+        </div>
+    {% endfor %}
+</section>
