@@ -1,0 +1,262 @@
+html {
+    --main-text-color: #b3b3b3;
+    --h-color: #fff;
+    background: #1d2330;
+    transition: .5s ease-in-out background-color;
+}
+.light-theme {
+    --main-text-color: #4b4b4b;
+    --h-color: #000000;
+    background: #ffffff;
+}
+.light-theme a {
+    color: #2c942c;
+    text-decoration: none;
+}
+.light-theme strong {
+    color: #000000;
+}
+* {
+    color: var(--main-text-color);
+    box-sizing: border-box;
+    font-family: 'Sarabun', sans-serif;
+    background: inherit;
+}
+body {
+    background: inherit;
+    margin: 0;
+    font-size: 1.2rem;
+    text-transform: lowercase;
+}
+nav {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+    padding: 20px 10px;
+    /* border-bottom: 1px solid var(--main-text-color); */
+    box-shadow: 0 8px 6px -6px var(--main-text-color);
+}
+nav .logo a {
+    color: var(--h-color);
+}
+h1, h2, h3, 
+h4, h5, h6 {
+    font-weight: 500;
+    margin: 1.8rem inherit;
+}
+pre.highlight {
+    background: #141414;
+    border-radius: 4px;
+    overflow: auto;
+    padding: 14px;
+}
+.highlighter-rouge {
+    color: #b9003e;
+}
+img {
+    width: 100%;
+}
+a {
+    text-decoration: underline;
+    color: var(--main-text-color);
+    transition: .2s cubic-bezier(.68,-0.55,.27,1.55) all;
+}
+a:hover {
+    color: #313131;
+}
+.social {
+    font-size: 1rem;
+    margin-top: 1.8rem; 
+}
+
+.social a {
+    padding: 2px;
+    text-decoration: none;
+    color: #2c942c;
+    /* border: 1px solid red; */
+}
+section .section-header {
+    color: var(--h-color);
+    margin-top: 2.6rem;
+}
+section > div {
+    width: 95%;
+    margin: auto;
+}
+.main {
+    width: 60%;
+    margin: auto;
+}
+.title {
+    color: var(--h-color);
+    display: flex;
+    align-items: center;
+}
+
+.title small {
+    margin: 0 10px;
+}
+
+.intro {
+    color: var(--main-text-color);
+}
+
+.blog-posts .post {
+    padding: 11px 0;
+    border-bottom: 1px solid #a3a3a371;
+}
+.blog-posts .post .blog-title {
+    display: flex;
+    justify-content: space-between;
+}
+.blog-posts .post .blog-title a:hover {
+    text-indent: 10px;
+    color: teal;
+
+}
+.blog-posts .post a {
+    color: var(--main-text-color);
+    text-decoration: none;
+}
+.blog-posts .post span {
+    color: #2c942ca9;
+}
+
+.pagination {
+    margin: 1.8rem 0;
+    display: flex;
+    justify-content: space-around;
+}
+.pagination .previous {
+    color: var(--main-text-color);
+}
+.pagination a.previous {
+    color: #a3a3a3;
+}
+.pagination .next {
+    color: var(--main-text-color);
+}
+.pagination a.next {
+    color: #a3a3a3;
+}
+.pagination .page_number {
+    color: var(--main-text-color);
+}
+
+.post-page {
+    color: var(--main-text-color);
+    font-weight: 200;
+}
+.post-page h1, .post-page h2,
+.post-page h3, .post-page h4,
+.post-page h5, .post-page h6 {
+    color: var(--h-color);
+    font-weight: 500;
+}
+.post-page .post-page-title {
+    margin-bottom: 10px;
+}
+.post-page img {
+    border-radius: 4px;
+}
+
+.project {
+    margin-top: 3rem;
+}
+.project h2 {
+    margin: 1rem 0;
+}
+.PageNavigation {
+    display: block;
+    width: auto;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}
+
+.PageNavigation a {
+    display: block;
+    width: 50%;
+    margin: 1em 0;
+}
+
+.PageNavigation .next {
+    text-align: right;
+}
+  
+footer {
+    padding: 4rem 0;
+}
+
+
+@media (max-width: 800px) {
+    nav {
+        text-align: center;
+        width: 100%;
+        padding: 20px 4px;
+        display: block;
+    }
+    .main {
+        width: 95%;
+    }
+    .title {
+        display: block;
+    }
+    .title small {
+        display: block;
+        margin: 0;
+    }
+    .blog-posts .post .blog-title {
+        display: block;
+    }
+    .PageNavigation a {
+        width: 100%;
+    }
+}
+
+
+
+
+
+.small-text {
+    font-size: 1.2rem;
+}
+.gray-text {
+    color: #a3a3a3;
+}
+strong {
+    color: #fff;
+}
+.message {
+    background: #c0ffff;
+    margin: 10px auto;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+@media (max-width: 800px) {
+    .message {
+        width: 105%;
+        border-radius: 0;
+        margin-left: -2.3%;
+        padding: 10px 25px;
+    }
+}
+.icon {
+    height: 30px;
+    width: 30px;
+    margin: 0 2px;
+}
+
+.profile-image {
+    height: 160px;
+    width: 160px;
+    text-align: center;
+    margin: 50px auto;
+    border-radius: 50%;
+    overflow: hidden;
+}
