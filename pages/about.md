@@ -7,6 +7,7 @@
 
 Hello! I am Abdus, a developer living in India. And I am glad that you're interested in reading about me 😃
 
+<<<<<<< HEAD
 First off, I am not really good at explaining things or writing stories or even talking about myself. So, please pardon me if I sound strange at any point!
 
 I am a student learning, full-stack web development. I am mostly self-taught(though I am pursuing a CS degree). I teach myself how to code from around the web. I am grateful to websites like [MDN](https://developer.mozilla.org/en-US/), [W3Schools](https://w3schools.org), [freeCodeCamp](https://freecodecamp.org) etc.
@@ -15,6 +16,8 @@ I love coding and building things in React and NodeJS. I use MongoDB(NoSQL is fu
 
 I have been using GNU/Linux for a few years. And I love it! I started my _Linux_ journey with Ubuntu, tried many other distributions like Linux Mint, Manjaro etc. Among all of them, I feel like Arch & Arch-based distributions are batter. But that's only my point of view.
 
+=======
+>>>>>>> bfa39dd094a6530715547ca6c0720f2fa7dd648c
 Open-Source ❤️ <!-- <i class="fas fa-heart" style="color: #ff0055"></i> -->
 
 Don't forget to check out [Zero to Mastery](https://zerotomastery.io)(programming community I belong to), [Andrei Neagoie](https://twitter.com/AndreiNeagoie)(my instructor) and [his courses](https://www.udemy.com/user/andrei-neagoie/).
