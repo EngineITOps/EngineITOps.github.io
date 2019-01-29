@@ -1,0 +1,29 @@
+---
+    layout: page
+    title: Developer's Blog
+    permalink: /dev-blogs/
+    excerpt: get a list of blogs written by developers of different experience level
+---
+
+I am collecting blogs written and maintained by developers of all level. 
+Feel free to add yours. I would love to read! 
+
+<style>
+    .dev-blogs {
+        margin: 70px 0;
+    }
+    .dev-blogs h3 {
+        margin-bottom: 7px;
+    }
+</style>
+
+<div class="dev-blogs">
+    <ul>
+        {% for blog in site.data.dev-blogs %}
+            <li>
+                <h3><a href="{{ blog.url }}">{{ blog.url }}</a></h3>
+                <div> {{ blog.description }} </div>
+            </li>
+        {% endfor %}
+    </ul>
+</div>
