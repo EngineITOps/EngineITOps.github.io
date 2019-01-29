@@ -19,8 +19,13 @@ author: Abdus
 description: >- # this means to ignore newlines until "baseurl:"
   Indian Web Developer, looking for a position to fit himself in software industry. Loves Linux systems and open-source. Open to remote works. contact <a href="https://twitter.com/thisisabdus">@thisisabdus</a>
 baseurl:  # the subpath of your site, e.g. /blog
+<<<<<<< HEAD
 url: "https://engineitops.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  sangam14
+=======
+url: "https://engineITops.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+github_username: sangam14
+>>>>>>> bfa39dd094a6530715547ca6c0720f2fa7dd648c
 disqus_id: #blog-abdus
 paginate: 10
 paginate_path: "/page:num/"
