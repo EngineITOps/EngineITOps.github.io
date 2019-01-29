@@ -2,27 +2,46 @@
 layout: default
 ---
 
-<article class="post">
-  <h1>{{ page.title }}</h1>
-  <div class="post-categories">
-    {% if post %}
-      {% assign categories = post.categories %}
-    {% else %}
-      {% assign categories = page.categories %}
-    {% endif %}
-    {% for category in categories %}
-    <a href="{{site.baseurl}}/categories/#{{category|slugize}}">{{category}}</a>
-    {% unless forloop.last %}&nbsp;{% endunless %}
-    {% endfor %}
-  </div>
-  <div class="date">
-    By {{ page.author|capitalize}}
-    <div style="float: right;">
-      {{ page.date | date: "%B %e, %Y" }}
+<div class="main">
+    <div class="post-page">
+        <h1 class="post-page-title">{{ page.title }}</h1>
+        <div style="margin-bottom: 40px">
+            <span class="gray-text">Posted on</span> {{ page.date | date: ' %b %d, %Y' }} &nbsp; &VerticalBar;&nbsp;
+            
+            {% assign wordcount = page.content | number_of_words %}
+            {% if wordcount < 256 %}
+                <span class="gray-text">1 min read</span>
+            {% else %}
+                <span class="gray-text">{{ wordcount | divided_by: 256 }} min read</span>
+            {% endif%} &nbsp;&VerticalBar;&nbsp;
+
+            <span class="gray-text">
+                {% for category in page.categories %}
+                    <a href="{{ '/categories/' | absolute_url }}#{{ category }}">{{ category }}</a>
+                {% endfor %}
+            </span>
+        </div>
+        {{ content }}
+
+        {% include social-share.html %}
+
+        <div class="PageNavigation">
+            {% if page.previous.url %}
+                {% if page.previous.link_post %}
+                    <a class="prev" href="{{ page.previous.link_post }}">&laquo; {{ page.previous.title }}</a>
+                {% else %}
+                    <a class="prev" href="{{ page.previous.url }}">&laquo; {{ page.previous.title }}</a>
+                {% endif %}
+            {% endif %}
+            {% if page.next.url %}
+                {% if page.next.link_post %}
+                    <a class="next" href="{{ page.next.link_post }}">{{ page.next.title }} &raquo;</a>
+                {% else %}
+                    <a class="next" href="{{ page.next.url }}">{{ page.next.title }} &raquo;</a>
+                {% endif %}
+            {% endif %}
+        </div>
+
+        {% include disqus-comment.html %}
     </div>
-  </div>
-  <div class="entry">
-    {{ content }}
-  </div>
-  {% include disqus.html %}
-</article>
+</div>
