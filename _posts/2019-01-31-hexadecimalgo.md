@@ -24,6 +24,8 @@ categories: [ GO ]
 	      //	fmt.Printf("%d - %b - %#X \n", 42, 42, 42)
 	        fmt.Printf("%d \t %b \t %#X \n", 42, 42, 42)
        }
+ 
+ 
  output:      
        
        42 	 101010 	 0X2A 
