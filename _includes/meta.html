@@ -1,0 +1,49 @@
+{% if page.title %}
+{% if page.layout == 'page' %}
+    {% assign title = page.title | append: ' - Abdus Samad Azad' %}
+{% else %}
+    {% assign title = page.title %}
+{% endif %}
+{% else %}
+    {% assign title = site.title %}
+{% endif %}
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="keywords" content="{{ page.tags }}"/>
+<meta name="description" content="{{ page.excerpt | strip_html }}"/>
+<meta name="copyright"content="Abdus Samad Azad">
+<meta name="robots" content="index,follow" />
+<meta name="summary" content="{{ page.excerpt | strip_html }}">
+<meta name="Classification" content="Business">
+<meta name="author" content="{{ site.author }}, {{ site.email }}">
+<meta name="copyright" content="&copy; Abdus Samad Azad">
+<meta name="reply-to" content="{{ site.email }}">
+<meta name="category" content="{{ page.categories }}">
+<meta name="revisit-after" content="7 days">
+<meta http-equiv="Expires" content="0">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Cache-Control" content="no-cache">
+
+<!-- OG -->
+{% assign url = page.url | absolute_url %}
+{% assign metaimg = 'https://i.imgur.com/LQyk6Bz.png' %}
+{% if page.meta_image %}
+    {{ metaimg = page.meta_img }}
+{% endif %}
+
+
+<meta property="og:title" content="{{ title }}"/>
+<meta property="og:url" content="{{ url }}"/>
+<meta property="og:image" content="{{ metaimg }}"/>
+<meta property="og:site_name" content="{{ title }}"/>
+<meta property="og:description" content="{{ page.excerpt | strip_html }}"/>
+
+<!-- Twitter -->
+<meta name="twitter:site" content="@{{ site.twitter_username }}">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:creator" content="@{{ site.twitter_username }}">
+<meta name="twitter:text:title" content="{{ title }}">
+
+<meta name="google-site-verification" content="6Mm25Nn9QBbeX0-_W0wplUu1cJBz_sTKoSdymeV_PwQ" />
