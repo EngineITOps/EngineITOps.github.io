@@ -1,11 +1,10 @@
-- name: GH head to head
+- name: Programming in GO
   status: completed #in-progress | in-progress | failed
-  description: A mini-project I built to learn how to work with GraphQL and React. 
-  tech_stack: React, GraphQL
+  description: GOlang series  
+  tech_stack: Golang 
   important_project: true
   url: 
-    repo: https://github.com/thisisabdus/gh-head-to-head
+    repo: 
     demo: 
-    download: https://github.com/thisisabdus/gh-head-to-head/archive/master.zip
+    download: 
     blog: 
-
