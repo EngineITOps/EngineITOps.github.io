@@ -1,4 +1,48 @@
 ---
-layout: index
-title: Home
+layout: default
+excerpt: Personal website/blog of Abdus Samad Azad, a web developer based in Assam, India. He codes in JavaScript(React & Node) and loves to explore Linux Systems and open-source.
 ---
+
+
+<div class="main">
+  <div class="profile-image">
+    <img src="{{ '/assets/img/me.png' | relative_url }}" alt="">
+  </div>
+  <header>
+    <h1 class="title">abdus samad azad <small class="gray-text small-text">@thisisAbdus</small></h1>
+    <section>
+      <div class="intro">
+        {{ site.description }}
+      </div>
+      <div class="social">
+        Social: 
+        <a href="https://twitter.com/thisisabdus">Twitter</a>
+        <a href="https://medium.com/@thisisabdus">Medium</a>
+        <a href="https://github.com/thisisabdus">GitHub</a>
+        <a href="https://linkedin.com/in/thisisabdus">LinkedIn</a>
+      </div>
+    </section>
+  </header>
+
+  <section>
+    <h3 class="section-header">Blog Posts <small class="gray-text">(recent 5)</small></h3>
+    <div class="blog-posts">
+      {% for post in site.posts limit: 5%}
+        <div class="post">
+          <div class="blog-title">
+            {% if post.link_post %}
+              <a href="{{ post.link_post }}">{{ post.title }}</a>
+              <span>Medium&neArr; &middot; {{ post.date | date: "%b %d, %y" }}</span>
+            {% else %}
+              <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+              <span>{{ post.date | date: "%b %d, %y" }}</span>
+            {% endif %}
+          </div>
+          <div class="bottom-border-full"></div>
+        </div>
+      {% endfor %}
+    </div>
+    <br>
+    ... more on <a href="/blog/">blog page</a>
+  </section>
+</div>
