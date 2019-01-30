@@ -1,18 +1,3 @@
-- description: '🏗 completed a new project: gh-head-to-head. I built this to learn how to implement GraphQL in React'
-  datetime: Jan 26, 2019
-
-- description: 🏗 finished building my website. So far, it has a timeline(this page), a blog with disqus comments and few more features. 
-  datetime: Jan 21, 2019
-
-- description: ✍️ Publish a new article on medium under <a href="https://medium.com/zerotomastery">zero to mastery</a> publication, <a href="https://medium.com/zerotomastery/why-not-to-use-wordpress-for-blogging-ee1c3a7c36ce">Why NOT TO Use WordPress for Blogging</a>
-  datetime: Jan 18, 2019
-
-
-
-- description: ✍️ Publish a new tutorial on medium under <a href="https://hackernoon.com">hackernoon</a> publication, <a href="https://hackernoon.com/set-up-ssl-in-nodejs-and-express-using-openssl-f2529eab5bb">Set-up SSL in NodeJS and Express using OpenSSL</a>
-  datetime: Jan 15, 2019
-
-
 
 - description: ✍️ Publish a new tutorial on medium under <a href="https://blog.usejournal.com/">Noteworthy - The Journal Blog</a> publication, <a href="https://blog.usejournal.com/https-medium-com-thisisabdus-automated-testing-with-mocha-beginners-guide-for-testing-javascript-apps-45aa67dc3352">Automated Testing with Mocha — Guide for Testing JavaScript Apps</a>
   datetime: Aug 25, 2018
