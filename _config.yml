@@ -3,8 +3,8 @@ markdown:         kramdown
 highlighter:      rouge
 
 # Setup
-title:            Gon's notebook
-tagline:          'Data browser'
+title:             Engine ITops
+tagline:          'trending...'
 description:      'A Tips of OPS engineering, development' 
 url:              https:/engineITops.github.io
 #baseurl:          '/hydeout'
