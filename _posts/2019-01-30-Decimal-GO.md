@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Numeral Systems - Programming in GO
+title: 1.Numeral Systems - Programming in GO
 tags: [GO, helloworld]
 categories: [ GO ]
 ---
 
 
-## numeral systems - Programming in GO
+## 1. numeral systems - Programming in GO
 
 
 ---
