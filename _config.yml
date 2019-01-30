@@ -1,27 +1,35 @@
 # Dependencies
-markdown:         redcarpet
-highlighter:      pygments
-
-# Permalinks
-permalink:        pretty
-
+markdown:         kramdown
+highlighter:      rouge
 
 # Setup
-title:           ENGINE
-                 ITOPS
-tagline:          'sangam biradar'
-description:      ' <a href="http://sangam14.github.io" target="_blank">resume</a>'
-url:              http://engineitops.github.io
-baseurl:          /
+title:            Gon's notebook
+tagline:          'Data browser'
+description:      'A Tips of OPS engineering, development' 
+url:              https:/engineITops.github.io
+#baseurl:          '/hydeout'
+                  # the optional subpath of your site, e.g. "/blog"
+                  # NB: This applies to all pages in your Jekyll site.
+                  # If you want to move just the blog index pages but keep
+                  # other pages at root, see the paginate_path and
+                  # sidebar_blog_link below.
 
 author:
-  name:           'sangam biradar'
-  url:            https://www.linkedin.com/in/sangambiradar14/
+  name:           '1eedaegon'
+  url:            https://twitter.com/fongandrewc
 
 paginate:         5
+# paginate_path:    '/page:num'
+                    # Or '/blog/page:num' if you want to move your index pages
 
-# Custom vars
-version:          2.1.0
+plugins:
+  - jekyll-feed
+  - jekyll-gist
+  - jekyll-paginate
 
-github:
-  repo:           https://github.com/sangam14
+# Sidebar link settings
+sidebar_home_link:  true
+# sidebar_blog_link:  '/blog'   # By default, your home page is your blog
+                                # page. If you change your paginate_path,
+                                # set this to the root of the paginate_path
+                                # to enable a separate blog link.
