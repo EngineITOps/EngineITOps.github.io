@@ -148,11 +148,11 @@ Package fmt implements formatted I/O with functions analogous to C’s printf an
 The format ‘verbs’ are derived from C’s but are simpler.</p>
 	</section>
 		<section>
-			<p>  Numeral Systems - Programming in GO </p>
-		<section>
+			<p> 1. Numeral Systems (Decimal) - Programming in GO </p>
+		</section>
 		<section>
 			
-		    <h2> Numeral systems -  Decimal-PWG <a href="https://play.golang.org">[PWG]</a> Platform on your browser</p>
+		    <h2> PWG <a href="https://play.golang.org">[PWG]</a> Platform on your browser</p>
 						</h2>
 					<pre><code class="hljs" data-trim contenteditable>
 					
@@ -167,7 +167,53 @@ The format ‘verbs’ are derived from C’s but are simpler.</p>
 				
 					</code></pre>
 					<p> copy the above code in PWG <a href="https://play.golang.org/p/2yuamYe-4mD">ready Platform</a>.</p>
-				</section>	
+				</section>
+	
+	     <section>
+			<p> 2. Numeral Systems (binary) - Programming in GO </p>
+		</section>
+		<section>
+			
+		    <h2> PWG <a href="https://play.golang.org">[PWG]</a> Platform on your browser</p>
+						</h2>
+					<pre><code class="hljs" data-trim contenteditable>
+					
+package main
+
+import "fmt"
+
+func main() {
+ fmt.printf("%d - %b \n", 42, 42)
+}
+				
+					</code></pre>
+					<p> copy the above code in PWG <a href="https://play.golang.org/p/tCTXTZ-b1g0">ready Platform</a>.</p>
+				</section>
+	<section>
+              
+              
+                in above program the annotation verb %b formats a number in binary ex:- which represent 101010 ( base 2 format) and 
+		the annotation verb %d formats a number in base 10 ex:which represent 42 ( base 10 format)
+
+integer cheatsheet for fmt:
+					</p>
+					
+					<pre><code class="hljs" data-trim contenteditable>
+
+%b	base 2
+%c	the character represented by the corresponding Unicode code point
+%d	base 10
+%o	base 8
+%q	a single-quoted character literal safely escaped with Go syntax.
+%x	base 16, with lower-case letters for a-f
+%X	base 16, with upper-case letters for A-F
+%U	Unicode format: U+1234; same as "U+%04X"
+				
+					</code></pre>
+				
+				</section>
+
+		
 			
 		
 		
