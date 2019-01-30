@@ -1,168 +1,191 @@
-# Hydeout
+# Sleek
 
-Hydeout updates the original [Hyde](https://github.com/poole/hyde)
-theme for [Jekyll](http://jekyllrb.com) 3.x and adds new functionality.
+[![Gem Version](https://badge.fury.io/rb/jekyll-sleek.svg)](https://badge.fury.io/rb/jekyll-sleek) [![Build Status](https://travis-ci.org/janczizikow/sleek.svg?branch=master)](https://travis-ci.org/janczizikow/sleek) [![license](https://img.shields.io/github/license/mashape/apistatus.svg)](https://github.com/janczizikow/sleek)
 
-![Desktop](/_screenshots/1.png?raw=true)
-<img alt="Mobile home page" src="/_screenshots/2.png?raw=true" width="300px" />
-<img alt="Mobile post page" src="/_screenshots/3.png?raw=true" width="300px" />
+A modern [Jekyll](https://jekyllrb.com/) theme focused on speed performance & SEO best practices.
 
-### Usage
+![Sleek Jekyll Theme](./sleek.jpg)
 
-Hydeout is available as the `jekyll-theme-hydeout` Ruby Gem.
-Add `gem "jekyll-theme-hydeout", "~> 3.4"` to your Gemfile and run
-`bundle install`.
+## Features
 
-If you're installing on Github pages, you may also have to add
-`remote_theme: fongandrew/hydeout` to your `_config.yml`. [See the Github
-instructions for more details.](https://help.github.com/articles/adding-a-jekyll-theme-to-your-github-pages-site/)
+* Compatible with [Github Pages](https://pages.github.com/)
+* Minimal, responsive and speed performance optimized
+* SEO friendly, with help of [Jekyll SEO Plugin](https://github.com/jekyll/jekyll-seo-tag)
+* Easy [Google Tag Manager](https://tagmanager.google.com/) Integration
+* Support for [Disqus](https://disqus.com/) comments
+* Form submissions with [Formspree](#formspree)
 
-Hydeout uses pagination, so if you have an `index.md`, you'll need to swap
-it with an `index.html` that uses the `index` layout:
+[Preview Demo](https://janczizikow.github.io/sleek/)
 
-```
----
-layout: index
-title: Home
----
-```
+## Installation
 
-You'll also need to add a setting to `_config.yml` telling Jekyll how many posts
-to include per page (e.g. `paginate: 5`).
+### System Requirements
 
-### Keep It Simple
+To use this project, you'll need the following things on your local machine:
 
-In keeping with the original Hyde theme, Hydeout aims to keep the overall
-design lightweight and plugin-free. JavaScript is currently limited only
-to Disqus and Google Analytics (and is only loaded if you provide configuration
-variables).
+#### Jekyll
 
-Hydeout makes heavy use of Flexbox in its CSS. If Flexbox is not available,
-the CSS degrades into a single column layout.
-
-### Customization
-
-Hydeout replaces Hyde's class-based theming with the use
-of the following SASS variables:
-
-```scss
-$sidebar-bg-color: #202020 !default;
-$sidebar-fg-color: white !default;
-$sidebar-sticky: true !default;
-$layout-reverse: false !default;
-$link-color: #268bd2 !default;
+```shell
+gem install jekyll
 ```
 
-To override these variables, create your own `assets/css/main.scss` file.
-Define your own variables, then import in Hydeout's SCSS, like so:
+#### NodeJS (8 or greater)
 
-```scss
----
-# Jekyll needs front matter for SCSS files
----
+Download and open the [NodeJS installer](https://nodejs.org/en/)
 
-$sidebar-bg-color: #ac4142;
-$link-color: #ac4142;
-$sidebar-sticky: false;
-@import "hydeout";
+#### Gulp CLI (optional, but recommended)
+
+```shell
+npm install --global gulp-cli
 ```
 
-See the [_variables](_sass/hydeout/_variables.scss) file for other variables
-you can override.
+### Up & Running
 
-You can see the full set of partials you can replace in the
-[`_includes`](_includes) folder, but there are a few worth noting:
+1. [Fork the repo](https://github.com/janczizikow/sleek/fork)
+2. Clone or download the repo into directory of your choice: `git clone https://github.com/your-github-username/sleek.git`
+3. Inside the directory run `bundle install` and `npm install`
+4. If you want to use [gulp.js](https://gulpjs.com/) run `gulp` or `npm start`
+    * if you don't want to use gulp you can run `bundle exec jekyll serve` instead
 
-* `_includes/copyright.html` - Insert your own copyright here.
+#### Installing to existing jekyll project
 
-* `_includes/custom-head.html` - Insert custom head tags (e.g. to load your
-  own stylesheets)
+Add this line to your Jekyll site's `Gemfile`:
 
-* `_includes/custom-foot.html` - Insert custom elements at the end of the
-  body (e.g. for custom JS)
+```ruby
+gem "jekyll-sleek"
+```
 
-* `_includes/custom-nav-links.html` - Additional nav links to insert at the
-  end of the list of links in the sidebar.
+And add this line to your Jekyll site's `_config.yml`:
 
-  Pro-tip: The `nav`s in the sidebar are flexboxes. Use the `order` property
-  to order your links.
+```yaml
+theme: jekyll-sleek
+```
 
-* `_includes/custom-icon-links.html`- Additional icon links to insert at the
-  end of the icon links at the bottom of the sidebar. You can use the `order`
-  property to re-order.
+And then execute:
 
-* `_includes/favicons.html` - Replace references to `favicon.ico` and
-  `favicon.png` with your own favicons references.
+    $ bundle
 
-* `_includes/font-includes.html` - The Abril Fatface font used for the site
-  title is loaded here. If you're overriding that font in the CSS, be sure
-  to also remove the font load reference here.
+Or install it yourself as:
 
-### New Features
+    $ gem install jekyll-sleek
 
-* Hydeout adds a new tags page (accessible in the sidebar). Just create a
-  new page with the tags layout:
+## File Structure Overview
 
-  ```
-  ---
-  layout: tags
-  title: Tags
-  ---
-  ```
+```bash
+sleek
+├── _includes	               # theme includes
+├── _js	                       # javascript files (by default jquery will be included with the scripts inside)
+├── _layouts                   # theme layouts (see below for details)
+├── _pages                     # pages folder (empty by default)
+├── _posts                     # blog posts
+├── _sass                      # Sass partials
+├── assets
+|  ├── css	               # minified css files
+|  ├── img                     # images and icons used for the template
+|  └── js		               # bundled and minified files from _js folder
+├── _config.yml                # sample configuration
+├── gulpfile.js                # gulp tasks (tasks autorunner)
+├── index.md                   # sample home page (blog page)
+└── package.json               # gulp tasks
+```
 
-* Hydeout adds a new "category" layout for dedicated category pages.
-  Category pages are automatically added to the sidebar. All other pages
-  must have `sidebar_link: true` in their front matter to show up in
-  the sidebar. To create a category page, use the `category` layout"
+## Usage
 
-  ```
-  ---
-  layout: category
-  title: My Category
-  ---
+You can modify the theme by changing the settings in `_config.yml`.
 
-  Description of "My Category"
-  ```
+### Posts
 
-* You can control how pages are sorted by using the `sidebar_sort_order`
-  parameter in the front matter. This works for both category and non-category
-  pages, although non-category pages will always come first. Take a look at
-  [`_includes/sidebar-nav-links.html`](./_includes/sidebar-nav-links.html) if
-  you want to customize this behavior.
+Create a new Markdown file such as 2017-01-13-my-post.md in _post folder. Configure YAML Front Matter (stuff between `---`):
 
-  ```
-  ---
-  layout: page
-  title: My page
-  sidebar_sort_order: 123
-  ---
+```yaml
+---
+layout: post # needs to be post
+title: Getting Started with Sleek # title of your post
+featured-img: sleek #optional - if you want you can include hero image
+---
+```
 
-  Some content.
-  ```
+#### Images
 
-* A simple redirect-to-Google search is available. Just create a page with
-  the `search` layout.
+In case you want to add a hero image to the post, apart from changing featured-img in YAML, you also need to add the image file to the project. To do so, just upload an image in .jpg format to `_img` folder. The name must before the .jpg file extension has to match with featured-img in YAML. Next, run `gulp img` from command line to generate optimized version of the image and all the thumbnails. You have to restart the jekyll server to see the changes.
 
-  ```
-  ---
-  layout: search
-  title: Google Search
-  ---
-  ```
+Sleek uses [Lazy Sizes](https://github.com/aFarkas/lazysizes). Lazy Loader for loading images. Check the link for more info. Lazy Sizes doesnt’t require any configuration and it’s going to be included in your bundled js file.
 
-* Disqus integration is ready out of the box. Just add the following to
-  your config file:
+### Pages
 
-  ```yaml
-  disqus:
-    shortname: my-disqus-shortname
-  ```
+The home page is located under index.md file. To change the content or design you have to edit the default.html file in `_layouts` folder.
 
-  If you don't want Disqus or want to use something else, override
-  `comments.html`.
+In order to add a new page, create a new html or markdown file under root directory or inside _pages folder. To add a link in navigation add it in `_config.yml`:
 
-* For Google Analytics support, define a `google_analytics` variable with
-  your property ID in your config file.
+```yaml
+# THEME SETTINGS
+navigation: # Navigation links
+  - {name: 'Home', link: '/'}
+  - {name: 'About', link: '/about'}
+  - {name: 'Contact', link: '/contact'}
+```
 
-There's also a bunch of minor tweaks and adjustments throughout the
-theme. Hope this works for you!
+`name` is the text that will be shown and link, well, it's a link.
+
+### Site configuration
+
+Sleek comes with [`jekyll-seo-tag`](https://github.com/jekyll/jekyll-seo-tag) plugin preinstalled to make sure your website gets the most useful meta tags. See [usage](https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md) to know how to set it up.
+
+Additionally, in `_config.yml` you can find custom theme settings under `# THEME SETTINGS` comment. Here's a brief overview of those custom settings:
+
+- `navigation` - collection of links that will be shown in the header
+- `tagline` - text that will be displayed on the homepage under the heading.
+- `hero_img` - background image of the homepage hero section
+
+Other settings usually enable/disable certain feature, and are discussed with the next sections.
+
+### Google Tag Manager
+
+To enable Google Tag Manager, add the uncomment the following line in `_config.yml`:
+
+```yaml
+google_tag_manager: GTM-XXXXXXX
+```
+
+Replace `GTM-XXXXXXX` with your Google Tag Manager Container ID.
+
+**Note** by default GTM tracking snippet will be also included in development environment.
+
+Google Tag Manager was chosen for this project as it's more flexible than Google Analytics, and it can be used to add GA to your site.
+
+### Disqus
+
+To enable Disqus comments, add your [Disqus shortname](https://help.disqus.com/customer/portal/articles/466208) to `_config.yml`:
+
+```yaml
+disqus:
+  shortname: my_disqus_shortname
+```
+
+### Formspree
+
+To use [Formspree](https://formspree.io/) with your email address, you need to change the following:
+
+Change `your-email@domain.com` email in `_config.yml`
+
+```yaml
+email: your-email@domain.com
+```
+
+You can check if it works by simply submitting the form.
+
+If you have a Formspree Gold Account, you can take advantage of using AJAX to submit form. To do so, uncomment last function in `_js/scripts.js` and run `gulp js`. Now the form will be submitted asynchronously, without leaving the page.
+
+## Contributing
+
+Bug reports and pull requests are welcome on GitHub at [https://github.com/janczizikow/sleek](https://github.com/janczizikow/sleek). This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
+
+## Development
+
+To set up your environment to develop this theme, run `bundle install` and `npm install`.
+
+The theme is setup just like a normal Jekyll site! Check out [file structure overview](#file-structure-overview) for details. To test the theme, run `gulp` and open your browser at `http://localhost:3000`. This starts a Jekyll server using the theme. Add pages, documents, data, etc. like normal to test the theme's contents. As you make modifications to the theme and to the content, your site will regenerate and you should see the changes in the browser after a refresh, just like normal.
+
+## License
+
+The theme is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
