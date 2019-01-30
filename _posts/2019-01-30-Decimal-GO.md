@@ -23,6 +23,6 @@ categories: [ GO ]
     
 Output:    
      
-     42
+   42
 
-     //Program exited.
+   Program exited.
