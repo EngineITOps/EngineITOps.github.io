@@ -10,7 +10,7 @@ categories: [ GO ]
 
 
 ---
-## print decimal,binary,hexadecimal number from 10 to 100 using loop 
+## print decimal,binary,hexadecimal number from 10 to 15 using loop 
 4.Numeral systems -  using loop
 
      
@@ -25,7 +25,8 @@ categories: [ GO ]
 	        }
           }
  
- output:      
+ output:     
+ ```
                 0 	 0 	 0 
                 1 	 1 	 1 
                 2 	 10 	 2 
@@ -42,6 +43,8 @@ categories: [ GO ]
                13 	 1101 	 d 
                14 	 1110 	 e 
                15 	 1111 	 f
+	       
+```
                
 if your new to loop in GO so lets see some detailing of for loop in GO:
 
