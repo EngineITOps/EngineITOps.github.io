@@ -54,7 +54,7 @@
 				<section>
 					<h2>Programming in Go</h2>
 					<p>
-						GOlang Series by Sangam Biradar 
+						Golang Series by Sangam Biradar 
 					</p>
 				</section>
 					
@@ -89,7 +89,10 @@
 						
 					</section>
 				
-			       </section>	
+			       </section>
+				<section>
+					<p> Chapter 1.Programming in Go </p>
+				</section>
 				<section>
 					<p> Lets Start With First Hello world - Golang </p>
 				</section>
@@ -312,12 +315,56 @@ you can print n number that convert number to any numeral system ( refer integer
 fmt) to convert number into different fmt format.quick using simple go program.</p>
 						
 					</section>
+				</section>
+
+
+
+<section>
+	<p> 5. numeral systems - Programming in GO </p>
+</section>	
+<section>
+		<section id="fragments">
+		<p class="fragment">UTF 8 = Unicode Transformation Format – 8-bit
+
+UTF8 is a character encoding where is assigns 1,112,064 characters a binary number that is from 1 byte (8 bits) to 4 bytes (32 bits) long.
+</p>
+		<p class="fragment">Why is it necessary? Well, our computers use binary to store data. So inside a computer information is a sequence of 0’s and 1’s. 
+When you are writing a text file on your computer the computer needs to store that in binary code (in 0’s and 1’s). But what would the character 'a' represent in binary? Short answer is whatever you want it to be. That is why we have UTF8 (and ASCII before it), it provides a standard that says the letter 'a' will take the value of 01100010 in binary. It allows us to say this file is stored with the UTF8 encoding,
+so the binary code must be interpreted with that in mind. 4.Numeral systems - UTF-8</p>
+						
+					</section>
 				
 			       </section>
+<section>
 			
-	     
+		    <h2> PWG <a href="https://play.golang.org">[PWG]</a> Platform on your browser</p>
+						</h2>
+					<pre><code class="hljs" data-trim contenteditable>
+					
+package main
+
+import "fmt"
+
+func main() {
+	for i := 60; i < 122; i++ {
+		fmt.Printf("%d \t %b \t %x \t %q \n", i, i, i, i)
+	}
+}
+				
+					</code></pre>
+					<p> copy the above code in PWG <a href="https://play.golang.org/p/pCHwUKHN9tq">ready Platform</a>.</p>
+				</section>
+<section>
+	<p>
+as we seen decimal,binary and hexadecimal programs in Go , in this above UTF-8 program annotaition %q is used for UTF-8 character in coding. Note:-UTF-8 has been the dominant character encoding for 
+the World Wide Web since 2009, and as of March 2018 accounts for 91.0% of all Web pages. The Internet Mail Consortium(IMC) recommended that all e-mail programs be able to display and create mail using UTF-8, 
+and the W3C recommends UTF-8 as the default encoding in XML and HTML
+	</p>
 		
-			
+			</section>
+<section>
+					<p> Chapter 2.Programming in Go - starting date 2 feb 19</p>
+</section>
 		
 		
 		<section>
