@@ -43,21 +43,21 @@ categories: [ AWS ]
 ● IAM allows you to define password strength and rotation policies.<br>
 
 ## IAM Policies
-● A document that defines one or more permissions
-● Attached to users, groups, and roles
-● Written in JavaScript Object Notation (JSON)
-● Selected from a pre-defined AWS list of policies, or you can create your own policy
+● A document that defines one or more permissions<br>
+● Attached to users, groups, and roles<br>
+● Written in JavaScript Object Notation (JSON)<br>
+● Selected from a pre-defined AWS list of policies, or you can create your own policy<br>
   
  ## AWS Policies
-● AWS has many predefined policies which allow you to define granular access to AWS resources.
-● There are around 200 predefined policies available for you to choose from.
+● AWS has many predefined policies which allow you to define granular access to AWS resources.<br>
+● There are around 200 predefined policies available for you to choose from.<br>
 ## AdministratorAccess Policy
-● AdministratorAccess policy provides full access to AWS services and resources.
+● AdministratorAccess policy provides full access to AWS services and resources.<br>
 ## AmazonEC2FullAccess Policy
-● AmazonEC2FullAccess policy provides AWS Directory Service user or groups full access to the Amazon EC2 services and resources
+● AmazonEC2FullAccess policy provides AWS Directory Service user or groups full access to the Amazon EC2 services and resources<br>
 ## AmazonS3ReadOnlyAccess Policy
-● AmazonS3ReadOnlyAccess policy provides read-only access to all buckets using the AWS Management Console
+● AmazonS3ReadOnlyAccess policy provides read-only access to all buckets using the AWS Management Console<br>
 ## JSON
-● AWS policies are written using JavaScript Object Notation (JSON).
+● AWS policies are written using JavaScript Object Notation (JSON).<br>
  
  
