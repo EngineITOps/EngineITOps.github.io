@@ -6,7 +6,6 @@ categories: [ AWS ]
 
 ---
 
-
 # Identity and Access Management (IAM)
 
 # The key features of IAM:
