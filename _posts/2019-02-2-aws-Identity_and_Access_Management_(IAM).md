@@ -1,5 +1,10 @@
+---
+layout: post
+title: AWS - Identity and Access Management (IAM)
+tags: [AWS]
+categories: [ AWS ]
 
-
+---
 
 
 
