@@ -22,22 +22,42 @@ categories: [ AWS ]
 ● Password Policy<br>
 ● Multi Factor Authentication (MFA)<br>
 
-# Shared access to your AWS account
+## Shared access to your AWS account
 ● Grant permission to users to access and use resources in your AWS account without sharing your password.<br>
-# Granular Permissions
+## Granular Permissions
 ● Granular permissions allow different permissions to various users to manage their access to AWS, such as:<br>
 • User access to specific services<br>
 • Specific permissions for actions<br>
 • Specific access to resources<br>
-# Secure Access
+## Secure Access
 ● Securely allocate credentials that applications on EC2 instances require to access other AWS resources.<br>
-# Identity Federation
+## Identity Federation
 ● Allows users with external accounts to get temporary access to AWS resources<br>
-# Identity Information
+## Identity Information
 ● Log, monitor, and track what users are doing with your AWS resources.<br>
-# PCI DSS Compliance
+## PCI DSS Compliance
 ● Payment Card Industry (PCI) and Data Security Standard (DSS) compliant<br>
-# Multi-Factor Authentication
+## Multi-Factor Authentication
 ● Two-Factor Authorization for users and resources to ensure absolute security using MFA devices<br>
-# Password Policy
+## Password Policy
 ● IAM allows you to define password strength and rotation policies.<br>
+
+## IAM Policies
+● A document that defines one or more permissions
+● Attached to users, groups, and roles
+● Written in JavaScript Object Notation (JSON)
+● Selected from a pre-defined AWS list of policies, or you can create your own policy
+  
+ ## AWS Policies
+● AWS has many predefined policies which allow you to define granular access to AWS resources.
+● There are around 200 predefined policies available for you to choose from.
+## AdministratorAccess Policy
+● AdministratorAccess policy provides full access to AWS services and resources.
+## AmazonEC2FullAccess Policy
+● AmazonEC2FullAccess policy provides AWS Directory Service user or groups full access to the Amazon EC2 services and resources
+## AmazonS3ReadOnlyAccess Policy
+● AmazonS3ReadOnlyAccess policy provides read-only access to all buckets using the AWS Management Console
+## JSON
+● AWS policies are written using JavaScript Object Notation (JSON).
+ 
+ 
