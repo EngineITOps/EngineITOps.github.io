@@ -1,8 +1,8 @@
 ---
 layout: post
 title: What is containerization?
-tags: [Kubernetes , Docker]
-categories: [Kubernetes]
+tags: [Kubernetes ,Docker]
+categories: [Kubernetes , Docker]
 ---
 # What is containerization?
 Containers have become one of the most popular concepts used in IT and software industry in the last five years. Since the introduction of Docker, containers have evolved to a larger ecosystem that include many tools and technologies, including Docker and Kubernetes.
