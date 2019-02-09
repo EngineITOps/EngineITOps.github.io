@@ -19,7 +19,7 @@ author: sangam biradar
 description: >- # this means to ignore newlines until "baseurl:"
   Trending.....
 baseurl:  # the subpath of your site, e.g. /blog
-url: "https://engineitops.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+url: "http://engineitops.icu" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: 
 github_username:  sangam14
 disqus_id: #blog-abdus
