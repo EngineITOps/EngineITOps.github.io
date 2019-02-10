@@ -40,7 +40,7 @@ Example: <br>
     Offices: [”PUNE”,”IND”],
      }
      
-# Column-Based Database<br>
+# 3.Column-Based Database<br>
 Column-based databases store data in column families as rows. These rows contain multiple columns associated with a row key.<br>
 In a Column-Based database:<br>
 ● The key identifies the rows.<br>
@@ -50,13 +50,13 @@ You can add a column to a row at any time without adding it to other rows<br>
 
 A Column-Based database reads and writes data to and from hard disk storage to quickly return a query. It lets you access individual data elements as a group in columns rather than access individually row-by-row.<br>
 
-# Column-Based Database Example<br>
+# 4.Column-Based Database Example<br>
  Cassandra is a column-based database. The features include:<br>
 ● Fast and easily scalable<br>
 ● Write operations spread across the cluster<br>
 ● Any node can handle the read and write operations<br>
 
-# Graph Database
+# 5.Graph Database
  A Graph database makes relationships readily available for any join-like execution allowing quick access of millions of connections. It lets you store data and its relationships with other data in the form of nodes and edges.<br>
  
 ![](/blog/img/mogo1.png)
