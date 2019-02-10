@@ -91,15 +91,15 @@ Consistency in CAP theorem means consistent read and write operations for the sa
 ## ACID
 Consistency in ACID means if the data does not satisfy predefined constraints, it is not persisted.<br>
 
-## Availability
-Availability means:
-● The database system is available to operate when required.
-● If a system is not available to serve a request when needed, it is not available.
+## Availability<br>
+Availability means:<br>
+● The database system is available to operate when required.<br>
+● If a system is not available to serve a request when needed, it is not available.<br>
 
 ## Partition Tolerance
-Partition tolerance or fault-tolerance is the third element of the CAP theorem. It measures the ability of a system to continue its service when some of its clusters become unavailable.
+Partition tolerance or fault-tolerance is the third element of the CAP theorem. It measures the ability of a system to continue its service when some of its clusters become unavailable.<br>
 
 ## MongoDB As per CAP
- Partition tolerance or fault-tolerance is the third element of the CAP theorem. It measures the ability of a system to continue its service when some of its clusters become unavailable.
+ Partition tolerance or fault-tolerance is the third element of the CAP theorem. It measures the ability of a system to continue its service when some of its clusters become unavailable.<br>
  
  
