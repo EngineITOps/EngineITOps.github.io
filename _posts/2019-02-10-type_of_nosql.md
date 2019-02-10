@@ -59,7 +59,7 @@ A Column-Based database reads and writes data to and from hard disk storage to q
 # Graph Database
  A Graph database makes relationships readily available for any join-like execution allowing quick access of millions of connections. It lets you store data and its relationships with other data in the form of nodes and edges.<br>
  
-![](https://github.com/EngineITOps/EngineITOps.github.io/blob/master/blog/img/mogo1.png)
+![](/blog/img/mogo1.png)
  
  
  ● Examples of Graph database are—Neo4J, InfiniteGraph, OrientDB, and FlockDB.<br>
@@ -67,13 +67,13 @@ A Column-Based database reads and writes data to and from hard disk storage to q
 ● FlockDB was created by Twitter for relationship related analytics.<br>
 
 
-![](https://github.com/EngineITOps/EngineITOps.github.io/blob/master/blog/img/mogo2.png)
+![](/blog/img/mogo2.png)
 
 
 # CAP Theorem<br>
 In a distributed system, the following three properties are important.<br>
 
-![](https://github.com/EngineITOps/EngineITOps.github.io/blob/master/blog/img/mogo3.png)
+![](/master/blog/img/mogo3.png)
 
 The CAP theorem states that in any distributed system only two of the three properties can be used simultaneously—consistency, availability, or partition tolerance. To adjust the database, understanding the following requirements is essential:<br>
 ● How the data is consumed by the system<br>
