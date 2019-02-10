@@ -73,7 +73,7 @@ A Column-Based database reads and writes data to and from hard disk storage to q
 # CAP Theorem<br>
 In a distributed system, the following three properties are important.<br>
 
-![](/master/blog/img/mogo3.png)
+![](/blog/img/mogo3.png)
 
 The CAP theorem states that in any distributed system only two of the three properties can be used simultaneously—consistency, availability, or partition tolerance. To adjust the database, understanding the following requirements is essential:<br>
 ● How the data is consumed by the system<br>
