@@ -7,6 +7,7 @@ categories: [ GO ]
 
 
 ## 4. numeral systems - Programming in GO
+![Hits](https://hitcounter.pythonanywhere.com/count/tag.svg?url=https%3A%2F%2Fengineitops.icu%2Floop-numeralgo)
 
 
 ---
