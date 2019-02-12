@@ -9,7 +9,7 @@ categories: [ GO ]
 ## 1. numeral systems - Programming in GO
 
 <div style="text-align: center">
-    <img src="https://hitcounter.pythonanywhere.com/count/tag.svg?url=https%3A%2F%2Fengineitops.icu%2FDecimal-GO" alt="Hits">
+<img src="https://hitcounter.pythonanywhere.com/count/tag.svg?url=https%3A%2F%2Fengineitops.icu%2FDecimal-GO" alt="Hits"  height="42" width="42">
 </div>
 
 ---
