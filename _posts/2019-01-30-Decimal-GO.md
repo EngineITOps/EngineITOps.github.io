@@ -7,7 +7,7 @@ categories: [ GO ]
 
 
 ## 1. numeral systems - Programming in GO
-![Hits](https://hitcounter.pythonanywhere.com/count/tag.svg?url=https%3A%2F%2Fengineitops.icu%2FDecimal-GO =100x20)
+![Hits](https://hitcounter.pythonanywhere.com/count/tag.svg?url=https%3A%2F%2Fengineitops.icu%2FDecimal-GO){ width=50% }
 
 
 ---
