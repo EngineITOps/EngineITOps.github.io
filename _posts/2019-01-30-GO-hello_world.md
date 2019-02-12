@@ -6,7 +6,6 @@ categories: [ GO ]
 ---
 
 ## 0.Lets Start With First Hello world - Go Program
-![Hits](https://hitcounter.pythonanywhere.com/count/tag.svg?url=https%3A%2F%2Fengineitops.icu%2FGO-hello_world)
 
 
 
