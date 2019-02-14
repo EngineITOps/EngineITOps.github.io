@@ -148,9 +148,15 @@
 			     </section>
 			      <section>		
 			     <section data-background-image="/slides/img/bg3.png">
-	
+				     <h1> As shown above, we can save key and value by clicking "Save" button.</h1>
                              </section>
-			     </section>	
+			     </section>
+			<section>	
+				<h1>Integrating Cirecle-ci (Before Docker)</h1>
+				<p> Make sure you add circle-ci config file under .circleci/... 
+				as shown under the example https://github.com/sangam14/dockerapp1/tree/master/.circleci </p>
+				
+			</section>	
 			<section>
 					<pre><code class="hljs" data-trim contenteditable>
 					
@@ -185,6 +191,21 @@ jobs:
 					</code></pre>
 					
 				</section>	
+				<section>
+					<p>
+	As shown above, make sure to add environment variable like $DOCKER_HUB_EMAIL, $DOCKER_HUB_USER_ID,$DOCKER_HUB_PWD 
+	Once you get circleci job running sucessfully, it should automatically be deployed on DockerHub repository.
+					</p>
+				</section>
+				    <section>		
+			     <section data-background-image="/slides/img/bg4.png">
+	<p> Login to the circl-ci account https://circleci.com using github. Select project which you want to deploy.</p>
+                             </section<section>		
+			     <section data-background-image="/slides/img/bg5.png">
+	<p>Go to the setting of the project in circleci dashboard and add the environment veriable which declared in .circleci/config.yml file io. You can also provide Github SSH permission.<p>
+                             </section>
+				     
+				
 				
 
 			</div>
