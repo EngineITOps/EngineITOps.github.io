@@ -53,378 +53,197 @@
 				<section>
 					<h2>DOCKER</h2>
 					<p>
-						 Let's start with a useful analogy?
+						Manage and Monitor the Docker Containers with Dry Tool in 5 Min
 					</p>
 				</section>
 					
 			         <section>
 					
 					<p>
-						 Apps as Fundamentally changed 
-					</p>
-				</section>
-					
-				<section>
-					<section id="fragments">
-						<h2>A dacade ago (and still true for many )</h2>
-	
-						<p class="fragment">Apps were monolithic</p>
-						<p class="fragment">built on single stack such as .Net or Java</p>
-						<p class="fragment">Long Lived </p>
-						<p class="fragment">Deloyed to single server</p>
-						
-					</section>
-				
-			       </section>	
-				<section>
-					<img data-src="/slides/img/docker-start-1.png"> 
-				</section>
-				<section>
-					<p> perhaps it was loadbalanced but still monolithic </p>
-				</section>
-				<section>
-				         <img data-src="/slides/img/docker-start-2.png">
-				</section>
-				<section>
-					<section id="fragments">
-						<h2> Compare that to today </h2>
-	
-			                       <p class="fragment">apps are constantly developed </p>
-						<p class="fragment">new versions are being deployed often</p>
-						<p class="fragment">buit from loosely coupled components</p>
-						<p class="fragment">Deployed to a multitude of servers</p>
-						
-					</section>
-				</section>
-		
-				<section>
-				         <img data-src="/slides/img/docker-start-3.png">
-				</section>
-				<section>
-					
-					<p>
-						 How do you handle all these parts? 
-					</p>
-				
-				</section>
-				 <section>
-					
-					<p>
-						Let's Start with a useful analogy
-					</p>
-				
-				</section>
-				<section>
-					
-					<p>
-						You are a shipping company
-					</p>
-				
-				</section>
-				<section>
-					
-					<p>
-						You ship pianos
-					</p>
-				
-				</section>
-				<section>
-					
-					<p>
-						You're great at it
-					</p>
-				
-				</section>	
-				<section>
-					
-					<p>
-						Then a customer wants to use you to ship  patatoes as well
-					</p>
-				
-				</section>
-				<section>
-					
-					<p>
-						You Say "Ok, they will fit next to the  pianos"
-					</p>
-				
-				</section>
-				<section>
-				         <img data-src="/slides/img/docker-start-4.png">
-				</section>
-				<section>
-					
-					<p>
-						Then another customer wants you to ship  whiskey
-					</p>
-				
-				</section>
-				<section>
-				         <img data-src="/slides/img/docker-start-5.png">
-				</section>
-				<section>
-					
-					<p>
-						Things start to break when the whiskey  spills all over the piano
-					</p>
-				
-				</section>
-					<section id="fragments">
-					
-					<p>
-						And your crew is wondering how to handle  all the differences
-						<p class="fragment">Size of goods </p>
-						<p class="fragment">Form of goods </p>
-						
-					</p>
-				
-				</section>
-				</section>
-					<section>
-					
-					<p>
-						Requirements to keep it safe and stable  during transport
-					</p>
-				
-				</section>
-			
-				<section>
-					
-					<p>
-			                      and also being able to transport it using  different transport methods
-					</p>
-				
-				</section>
-			
-			        <section>
-					
-					<p>
-			                     So what to do?
-					</p>
-				
-				</section>
-			        <section>
-					
-					<p>
-			                    so it was solved long year ago
-					</p>
-				
-				</section>
-			         <section>
-					
-					<p>
-			                    Enter, the intermodel container
-					</p>
-				
-				</section>
-					
-				<section>
-				         <img data-src="/slides/img/docker-start-6.png">
-				</section>
-			         <section>
-					
-					<p>
-			                    Now you can ship everything!...
-					</p>
-				
-				</section>
-			         <section>
-				         <img data-src="/slides/img/docker-start-7.png">
-				</section>
-			
-			        <section>
-				         <img data-src="/slides/img/docker-start-7.1.png">
-				</section>
-			        <section>
-					
-					<p>
-			                 
-			                    so what does this have to do with software?
-					</p>
-				
-				</section>
-			         <section>
-					
-					<p>
-			                        well , it's similier
-					</p>
-				
-				</section>
-			
-			        <section>
-					
-					<p>
-			                       You have an app built out of a lot of small  parts
-					</p>
-				
-				</section>
-			         <section>
-					
-					<p>
-			                       These small parts are called micro services
-					</p>
-				
-				</section>
-			        
-		
-			        <section>
-				         <img data-src="/slides/img/docker-start-8.png">
-				</section>
-			
-			        <section>
-				         <img data-src="/slides/img/docker-start-9.png">
-				</section>
-			
-			        <section>
-				         <img data-src="/slides/img/docker-start-10.png">
-				</section>
-			
-			         <section>
-					
-					<p>
-			                       You can surely install it in a production  datacenter
-					</p>
-				
-				</section>
-			         <section>
-					
-					<p>
-			                       But would it look the same if you ran it in  your dev enviroment?
-					</p>
-				
-				</section>
-			         <section>
-					
-					<p>
-			                       What about in a lab?
-					</p>
-				
-				</section>
-			         <section>
-					
-					<p>
-			                       Or in the cloud somewhere?
-					</p>
-				
-				</section>
-			
-			        <section>
-					
-					<p>
-			                      Enter , the container
-					</p>
-				
-				</section>
-			
-			          <section>
-					<section id="fragments">
-					
-					<p>
-						 containers make you app portable
-					        <p class="fragment">it looks the same everywhere </p>
-						<p class="fragment">No matter where you run it</p>
-						<p class="fragment"> Doesn't need you to install the app dependencies on your host</p>
-					</p>
-				
-				</section>
-	                        </section>
-	                         <section>
-					
-					<p>
-			                    Docker is one container standard
-					</p>
-				
-				</section>
-	                         <section>
-					
-					<p>
-			                   Docker has built a large ecosystem around it
-					</p>
-				
-				</section>
-                                 <section>
-					<section id="fragments">
-					
-					<p>
-						<h2> Docker facts</h2>
-			                        <p class="fragment">launched in march 2013</p>
-						<p class="fragment">over 100000 millions downlods</p>
-						<p class="fragment">over million Dockerized applications</p>
-						<p class="fragment"> 1000 + meetup groups around world</p>
-						<p class="fragment"> 100 + case studies from companies such as cambridge heathcare,ebay ....etc...</p>
-					</p>
-				
-				</section>
-	                        </section>
-	                        <section>
-					<section id="fragments">
-					
-					<p>
-						   conatiners make your app shareable
-					        <p class="fragment">The needs of the app is defined in a text file  </p>
-						<p class="fragment">  A "Dockerfile"</p>
-						 
-					</p>
-				
-				</section>
-	                        </section>
-                                 <section>
-					<section id="fragments">
-					
-					<p>
-						  Container contain everything your app  needs
-					        <p class="fragment">Bineries  </p>
-						<p class="fragment">Libraries</p>
-						<p class="fragment">File system</p>
-						 
-					</p>
-				
-				</section>
-	                        </section>
-                                 <section>
-					<section id="fragments">
-					
-					<p>
-						 containers use the host for certain things
-					        <p class="fragment">Networking</p>
-						<p class="fragment">Kernel</p>
-						
-						 
-					</p>
-				
-				</section>
-	                        </section>
-	                         <section>
-					
-					<p>
-						So no need to run an entire OS (like in a VM) to run an app
-					        
-				        </p>
-				
-				</section>
-                                 <section>
-					
-					<p>
-						summary
-				        </p>
-				
-				</section>
-                                 <section>
-					<section id="fragments">
-					
-					<p>
-						<h2> containers are awesome</h2>
-					        <p class="fragment">You can use them for your next app</p>
-						<p class="fragment">You can use thousands of already existing apps </p>
-						<p class="fragment"> They are always looks the same  </p>
-						<p class="fragment"> they are always portable </p>
-						<p class="fragment"> and they leave your host OS clean</p>
-					</p>
-				
-				</section>
-	                        </section>
-                              
+						Tested Infrastructure
 
+                                                <table class="tg">
+                                             <tr>
+                                            <th class="tg-yw4l"><b>Platform</b></th>
+                                            <th class="tg-yw4l"><b>Number of Instance</b></th>
+                                            <th class="tg-yw4l"><b>Reading Time</b></th>
+    
+                                            </tr>
+                                            <tr>
+                                            <td class="tg-yw4l"><b> Play with Docker</b></td>
+                                            <td class="tg-yw4l"><b>1</b></td>
+                                            <td class="tg-yw4l"><b>5 min</b></td>
+    
+                                            </tr>
+  
+                                            </table>
+					</p>
+				</section>
+				<section>
+					<section id="fragments">
+						<h2>Pre-requisite</h2>
+	
+						<p class="fragment">Open <a href="https://labs.play-with-docker.com/">[PWD]</a> Platform on your browser</p>
+						<p class="fragment">Click on **Add New Instance** on the left side of the screen to bring up Alpine OS instance on the right side </p>
+						
+						
+					</section>
+				
+			       </section>		
+						
+			
+	      <section>
+			<h1> Run multiple containers in an interactive and detached mode. </h1>
+					<pre><code class="hljs" data-trim contenteditable>
+```
+docker pull busybox
+docker pull hello-world
+docker run -t -d busybox
+docker run -t -d hello-world
+
+```
+
+
+					</code></pre>
+					
+				</section>
+		<section>
+			<h1> you will get on screen like this  </h1>
+					<pre><code class="hljs" data-trim contenteditable>
+```
+[node1] (local) root@192.168.0.33 ~
+$ docker pull busybox
+Using default tag: latest
+latest: Pulling from library/busybox
+57c14dd66db0: Pull complete
+Digest: sha256:7964ad52e396a6e045c39b5a44438424ac52e12e4d5a25d94895f2058cb863a0
+Status: Downloaded newer image for busybox:latest
+
+[node1] (local) root@192.168.0.33 ~
+$ docker pull hello-world
+Using default tag: latest
+latest: Pulling from library/hello-world
+1b930d010525: Pull complete
+Digest: sha256:2557e3c07ed1e38f26e389462d03ed943586f744621577a99efb77324b0fe535
+Status: Downloaded newer image for hello-world:latest
+
+[node1] (local) root@192.168.0.33 ~
+$ docker run -t -d busybox
+7c96cde9894fd9ff42d1c3638cad65cf306cb2757b3925a925f4d421a510a79f
+
+[node1] (local) root@192.168.0.33 ~
+$ docker run -t -d hello-world
+7a4198a31f61c380ddbe3b06eeb313da74de3d232727b0325937434900e8be8d
+```
+
+
+					</code></pre>
+					
+				</section>	
+		
+		
+<section>
+			<h1> Run multiple containers in an interactive and detached mode. </h1>
+					<pre><code class="hljs" data-trim contenteditable>
+```
+$ docker ps -a
+
+```
+
+
+					</code></pre>
+					
+				</section>	
+<section>
+			<h1> you will get on screen like this  </h1>
+					<pre><code class="hljs" data-trim contenteditable>
+```
+[node1] (local) root@192.168.0.33 ~
+$ docker ps
+CONTAINER ID        IMAGE               COMMAND             CREATED             STATUS      PORTS               NAMES
+7c96cde9894f        busybox             "sh"                3 minutes ago       Up 3 minutes                    sangam
+[node1] (local) root@192.168.0.33 ~
+$ docker ps -a
+CONTAINER ID        IMAGE               COMMAND             CREATED             STATUS             PORTS               NAMES
+7a4198a31f61        hello-world         "/hello"            3 minutes ago       Exited (0) 3 minutes ago               sangam
+7c96cde9894f        busybox             "sh"                3 minutes ago       Up 3 minutes                           sangam
+```
+
+
+					</code></pre>
+					
+				</section>	
+				
+<section>
+			<h1> if you want to run dry tool directly than use this one magical command  </h1>
+					<pre><code class="hljs" data-trim contenteditable>
+```
+$ docker run -it -v /var/run/docker.sock:/var/run/docker.sock moncho/dry
+
+```
+
+
+					</code></pre>
+					
+				</section>
+		
+				
+<section>
+			<h1> if you want to run dry tool directly than use this one magical command  </h1>
+					<pre><code class="hljs" data-trim contenteditable>
+```
+[node1] (local) root@192.168.0.33 ~
+$ docker run -it -v /var/run/docker.sock:/var/run/docker.sock moncho/dry
+Unable to find image 'moncho/dry:latest' locally
+latest: Pulling from moncho/dry
+4fe2ade4980c: Pull complete
+e9c4f9f2a7e3: Pull complete
+28bab79b92a9: Pull complete
+Digest: sha256:ad57f88f39fd910cc42e9416594dd2cf92ae561ddd914fd1c333f989a8d5bd4b
+Status: Downloaded newer image for moncho/dry:latest
+
+```
+
+
+					</code></pre>
+					
+				</section>
+						
+<section>
+			<h1> 	Interacting with Docker Containers:
+Use the navigation keys mentioned below to interact with the terminal. </h1>
+					<pre><code class="hljs" data-trim contenteditable>
+```
+[H]:Help [Q]:Quit | [F1]:Sort [F2]:Toggle Show Containers [F5]:Refresh [%]:Filter |
+[m]:Monitor mode [2]:Images [3]:Networks [4]:Nodes [5]:Services | [Enter]:Commands 
+
+```
+
+
+					</code></pre>
+					
+				</section>
+		
+								
+<section>
+			<h1> Select any container from the list and hit [enter] to open the options: </h1>
+					<pre><code class="hljs" data-trim contenteditable>
+```
+Fetch logs
+Inspect container
+Kill container
+Remove container
+Restart
+Show image history
+Stats + Top
+Stop
+```
+
+
+					</code></pre>
+					
+				</section>
+	
 			</div>
 
 		</div>
