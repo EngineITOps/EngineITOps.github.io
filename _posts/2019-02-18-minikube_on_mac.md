@@ -5,7 +5,6 @@ tags: [Kubernetes]
 categories: [Kubernetes]
 ---
 
-
 ![minikube](/blog/img/minikube.jpeg)
 
 if your new to kubernetes its good to start with minikube on your local host before that you can read my recent blog so you will get to know some basics 
