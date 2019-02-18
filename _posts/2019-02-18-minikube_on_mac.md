@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting started with Minikube: Kubernetes on your MACOSX
+title: Getting started with Minikube: Kubernetes on your laptop
 tags: [Kubernetes]
 categories: [Kubernetes]
 ---
