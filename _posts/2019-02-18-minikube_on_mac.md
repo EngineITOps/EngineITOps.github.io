@@ -129,12 +129,13 @@ NodePort: Exposes the service on each Node’s IP at a static port (the NodePort
 ```
 Biradars-MacBook-Air:~ sangam$ minikube service hello-minikube --url
 http://192.168.99.100:30451
-```
+
 <open a browser and go to that url>
  http://192.168.99.100:30451  
-    
-    
-    
+
+```    
+# output     
+   
 ```
 
 CLIENT VALUES:
