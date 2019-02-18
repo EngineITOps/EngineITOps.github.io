@@ -1,9 +1,11 @@
 ---
 layout: post
-title: Getting started with Minikube: Kubernetes on your laptop
+title:Getting started with Minikube: Kubernetes on your laptop
 tags: [Kubernetes]
 categories: [Kubernetes]
 ---
+
+
 
 ![minikube](/blog/img/minikube.jpeg)
 
