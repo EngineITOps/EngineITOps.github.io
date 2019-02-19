@@ -5,7 +5,7 @@ tags: [Kubernetes]
 categories: [Kubernetes]
 ---
 
-![](https://github.com/EngineITOps/EngineITOps.github.io/blob/master/blog/img/multipass.png)
+![](/blog/img/multipass.png)
 
 # MULTIPASS + MICROK8 + Grafana On MACOSX
 
