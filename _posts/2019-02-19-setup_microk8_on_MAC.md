@@ -5,6 +5,8 @@ tags: [Kubernetes]
 categories: [Kubernetes]
 ---
 
+![](https://github.com/EngineITOps/EngineITOps.github.io/blob/master/blog/img/multipass.png)
+
 # MULTIPASS + MICROK8 + Grafana On MACOSX
 
 MicroK8s is a local deployment of Kubernetes. Let’s skip all the technical details and just accept that
