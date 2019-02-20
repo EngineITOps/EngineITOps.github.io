@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Creating Volume with Alphine
+title: Creating Volume with Alpine
 tags: [Docker]
 categories: [ Docker ]
 ---
 
 
-## Creating Volume with Alphine
+## Creating Volume with Alpine
 
 
 ## Tested Infrastructure
