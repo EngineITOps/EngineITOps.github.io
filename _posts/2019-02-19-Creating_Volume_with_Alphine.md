@@ -40,7 +40,7 @@ categories: [ Docker ]
 - Create files in Alpine<br>
 - Verify the existence of Docker volume<br>
 
-## Create a Docker volume and pull Alpine image
+# Create a Docker volume and pull Alpine image
 
 Create a Docker volume to which you will add persistent data.
 ```
@@ -56,7 +56,7 @@ Create a container from Alpine and mount the volume mydata to /mnt.
 docker run -ti --name client -v mydata:/mnt alpine /bin/sh
 ```
 
-## Create files in Alpine 
+# Create files in Alpine 
 
 Go to the /mnt directory, touch (create) two files, and verify they exist.
 
@@ -69,15 +69,17 @@ ls
 
 Exit the container.
 
-```exit```
+```
+exit
+```
 
-## Verify that the container exists and is stopped.
+# Verify that the container exists and is stopped.
 
 ```docker ps -a```
 
  
 
-##  Verify the existence of Docker volume 
+#  Verify the existence of Docker volume 
 
 Delete the container and then verify that it is gone.
 
@@ -86,34 +88,32 @@ docker rm client
 docker ps –a
 ```
 
-## Run a new container and mount the volume mydata to /mnt again.
+# Run a new container and mount the volume mydata to /mnt again.
 
 ```
 docker run --rm -ti -v mydata:/mnt alpine /bin/sh
 ```
 
-## Go to the /mnt directory and observe if the files still exist.
+# Go to the /mnt directory and observe if the files still exist.
 
 ```
 cd /mnt
 ls
 ```
 
-## Exit the container.
+# Exit the container.
 
 ```
 exit
 ```
 
-## Verify that the volume still exists.
+# Verify that the volume still exists.
 
 ```
 docker volume ls
 ```
 
- 
-
-## Clean up artifacts. 
+# Clean up artifacts. 
 
 ```
 docker rm -f $(docker ps -aq) .
