@@ -12,6 +12,15 @@ categories: [ Docker ]
 #  Manage and Monitor the Docker Containers with Dry Tool in 5 Min
 
 
+If you are looking out for a tool which can manage Docker & Docker Swarm, you really need to try out "Dry" tool. With close to 1500 stars in short span of time, this tool is a terminal application to manage both Docker Host & Docker Swarm Mode.It shows information about Containers, Images and Networks, and, if running a Swarm cluster, it shows information about Nodes, Service, Stacks and the rest of Swarm constructs. It can be used with both local or remote Docker daemons.
+
+Besides showing information, it can be used to manage Docker. Most of the commands that the official Docker CLI provides, are available in dry with the same behaviour. also, it can also be used as a monitoring tool for Docker containers.Dry can be installed as a single binary and does not require external libraries.
+
+Under this tutorial, I will show you how to get started with this tool to manage and monitor your Docker containers
+
+
+
+
 
 ## Tested Infrastructure
 
