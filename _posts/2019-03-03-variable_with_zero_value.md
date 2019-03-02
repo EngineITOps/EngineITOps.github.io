@@ -30,5 +30,5 @@ func main() {
 }
 ```
 
-in this above program declared variable with its type and print values so it will give zero values and for bool it will return 
+in this above program declared variable with its type so it will give zero values and for bool it will return 
 false 
