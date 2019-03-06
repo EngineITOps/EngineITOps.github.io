@@ -1,7 +1,7 @@
 ---
 layout: post
-title: 13.Loop - For Statement - Programming in GO
-tags: [GO, helloworld]
+title: 14.Loop - For Statement - Programming in GO
+tags: [GO, LOOP]
 categories: [ GO ]
 ---
 
