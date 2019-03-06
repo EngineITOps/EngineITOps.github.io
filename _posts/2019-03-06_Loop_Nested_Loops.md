@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 12.Loop - Nested Loops  - Programming in GO
+title: 13.Loop - Nested Loops  - Programming in GO
 tags: [GO, LOOP]
 categories: [ GO ]
 ---
