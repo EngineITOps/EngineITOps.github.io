@@ -5,7 +5,7 @@ tags: [LINUX,starter]
 categories: [ LINUX ]
 ---
 
-
+![](/assets/img/linux_PNG11.png)
 
 # 1. History
 
