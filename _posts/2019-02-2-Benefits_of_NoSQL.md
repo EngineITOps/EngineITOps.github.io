@@ -1,8 +1,8 @@
 ---
 layout: post
 title: 2.Benefits of NoSQL
-tags: [MOGODB]
-categories: [ MOGODB DEVELOPER ]
+tags: [MONGODB]
+categories: [ MONGODB DEVELOPER ]
 ---
 # Benefits of NoSQL
 
