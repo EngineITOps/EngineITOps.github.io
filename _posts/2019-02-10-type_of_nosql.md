@@ -1,8 +1,8 @@
 ---
 layout: post
 title: 3.Types of Nosql 
-tags: [MOGODB]
-categories: [ MOGODB DEVELOPER ]
+tags: [MONGODB]
+categories: [ MONGODB DEVELOPER ]
 ---
 
 # Types of NoSQL
