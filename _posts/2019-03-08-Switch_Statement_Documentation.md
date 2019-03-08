@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 22.Conditional - Switch Statement Documentation - Programming in GO
-tags: [GO, SWITCH]
+tags: [GO]
 categories: [ GO ]
 ---
 
