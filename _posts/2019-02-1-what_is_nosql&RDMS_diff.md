@@ -1,8 +1,8 @@
 ---
 layout: post
 title: 1.What is NoSQL?and Difference Between RDBMS and NoSQL Databases
-tags: [MOGODB]
-categories: [ MOGODB DEVELOPER ]
+tags: [MONGODB]
+categories: [ MONGODB DEVELOPER ]
 ---
 
 # What is NoSQL?and Difference Between RDBMS and NoSQL Databases
