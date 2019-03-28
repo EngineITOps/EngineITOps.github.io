@@ -27,8 +27,7 @@ func main() {
 ```
 [Go Playground](https://play.golang.org/p/aOJHy5FgZXF)
 
-
-# Stacking defers - use defer  ```	 defer fmt.Println(i). ``` because of defer its give you output of last result in first thats
+ Stacking defers - use defer  ```	 defer fmt.Println(i). ``` because of defer its give you output of last result in first thats
 known as last-in-first out manner 
 ```
 package main
