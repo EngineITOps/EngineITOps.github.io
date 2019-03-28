@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 25.Defer - Programming in GO
+title: 26.Defer - Programming in GO
 tags: [GO]
 categories: [ GO ]
 ---
