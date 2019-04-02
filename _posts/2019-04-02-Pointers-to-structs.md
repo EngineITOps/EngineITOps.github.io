@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 30.Pointers to structs - Programming in GO
+title: 31.Pointers to structs - Programming in GO
 tags: [GO]
 categories: [ GO ]
 ---
