@@ -1,6 +1,6 @@
 ---
 layout: post
-title: The Ultimate Docker Cheatsheets
+title: Building Docker images with a Dockerfile
 tags: [Docker, Dockerfile]
 categories: [ Docker ]
 ---
