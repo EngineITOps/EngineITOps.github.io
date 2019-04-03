@@ -9,6 +9,8 @@
 - [x] other platfrom - other implementations - https://engineitops.icu/other-platfrom_Othe_-Implementations
 - [x] manage and monitor the docker containers with dry tool in 5 min - https://engineitops.icu/dry_tool_docker
 - [x] creating volume with alpine - https://engineitops.icu/Creating_Volume_with_Alpine
+- [x] building docker images with a dockerfile -https://engineitops.icu/Building-Docker-images-with-a-Dockerfile
+- [x] cmd and entrypoint - https://engineitops.icu/CMD-and-ENTRYPOINT
 
 # Golang 
 - [ ]
