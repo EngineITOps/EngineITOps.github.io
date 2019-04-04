@@ -18,7 +18,7 @@
 # Golang 
 - [ ]
 - [ ]
-- [ ]
+- [x] 33.prefix suffix - programming in go - https://engineitops.icu/presuffix-golang
 - [x] 32.struct literal - programming in go - https://engineitops.icu/struct-literal-golang
 - [x] 31.pointers to structs - programming in go - https://engineitops.icu/Pointers-to-structs
 - [x] 30.struct fields - programming in go -https://engineitops.icu/Struct-Fields-golang
