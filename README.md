@@ -11,6 +11,9 @@
 - [x] creating volume with alpine - https://engineitops.icu/Creating_Volume_with_Alpine
 - [x] building docker images with a dockerfile -https://engineitops.icu/Building-Docker-images-with-a-Dockerfile
 - [x] cmd and entrypoint - https://engineitops.icu/CMD-and-ENTRYPOINT
+- [x] copying files during the build - https://engineitops.icu/Copying-files-during-the-build
+- [x] reducing image size - https://engineitops.icu/Reducing-image-size
+
 
 # Golang 
 - [ ]
