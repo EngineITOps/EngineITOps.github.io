@@ -62,6 +62,8 @@
 
 # challages soloving :
 
+- [x] go challenges - solve me first problem - https://engineitops.icu/GO_challenges-solve-me-first-problem-hackerrank
+
 
 
 
