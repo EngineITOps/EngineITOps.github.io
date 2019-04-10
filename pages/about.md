@@ -76,6 +76,7 @@ Open-Source ❤️ <!-- <i class="fas fa-heart" style="color: #ff0055"></i> -->
 - [x] go challenges - solve me first problem - https://engineitops.icu/GO_challenges-solve-me-first-problem-hackerrank
 - [x] go challenges - simple array sum problem - https://engineitops.icu/GO-challenges-Simple-Array-Sum-problem
 - [x] go challenges - compare the triplets problem - https://engineitops.icu/GO-challenges-compare-the-triplets-problem
+- [x]  go challenges - a very big sum problem - https://engineitops.icu/GO-challenges-A-Very-Big-Sum-problem
 
 
 
