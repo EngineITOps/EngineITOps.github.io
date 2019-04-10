@@ -77,6 +77,8 @@ Open-Source ❤️ <!-- <i class="fas fa-heart" style="color: #ff0055"></i> -->
 - [x] go challenges - simple array sum problem - https://engineitops.icu/GO-challenges-Simple-Array-Sum-problem
 - [x] go challenges - compare the triplets problem - https://engineitops.icu/GO-challenges-compare-the-triplets-problem
 - [x]  go challenges - a very big sum problem - https://engineitops.icu/GO-challenges-A-Very-Big-Sum-problem
+- [x] go challenges - diagonal difference problem - https://engineitops.icu/GO-challenges-Diagonal-Difference-problem
+
 
 
 
