@@ -4,7 +4,7 @@
 
 
 # Docker-IOT Using Arduino Uno And Johnny-Five Tranform Your IOT Platform to Next level 
-![](/Webp.net-resizeimage.jpg)
+![](/blog/img/Webp.net-resizeimage.jpg)
 
 # Prerequisites
 
@@ -145,11 +145,11 @@ Stop your Docker VM
 ```$ docker-machine stop local ```
 Now, open VirtualBox
 
-![](/vm1.png)
+![](/blog/img/vm1.png)
 
 Go to settings and mount your Arduino
 
-![](/vm2.png)
+![](/blog/img/vm2.png)
 
 # Step 4:
 At this point, you should be able to use your Arduino with Johnny-Five and Docker
@@ -174,7 +174,7 @@ Run the code
 ```
 If everything worked, you should see a blinking light!
 
-![](/ezgif.com-gif-maker.gif)
+![](/blog/img/ezgif.com-gif-maker.gif)
 
 
 reference:http://johnny-five.io
