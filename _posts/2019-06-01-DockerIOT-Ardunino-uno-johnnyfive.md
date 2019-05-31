@@ -12,13 +12,15 @@ categories: [ Docker ]
 
 At least an Arduino or compatible board (Uno, Mega, Leonardo, Fio, Pro, Pro Mini)
 
-```Arduino UNO
+```
+Arduino UNO
 Arduino Leonardo
 Arduino MEGA
 Arduino FIO
 Arduino Pro
 Arduino Pro Mini
 TinyDuino
+
 ```
 Sparkfun Inventor's Kit (Recommended for getting started)
 # OSX
@@ -30,10 +32,12 @@ Install node-gyp npm install -g node-gyp
 # Windows
 
 Via @ThomasDeutsch on https://github.com/rwldrn/johnny-five/issues/48#issuecomment-7696662
+
 ```
 Install Node.js >= 0.10.x 32 bit (unless anyone can confirm success with 64 bit)
 npm --add-python-to-path install --global --production windows-build-tools
 Install node-gyp npm install -g node-gyp
+
 ```
 # Ubuntu and Debian
 ```
@@ -50,13 +54,16 @@ Install Arduino Libraries (for firmware flashing) pacman -S arduino
 # Hello World
 
 Generally Arduino boards (Uno, Mega, Leonardo, Fio, Mini) come pre-flashed with the compiled StandardFirmata firmware. In most cases, getting started is as simple as...
+
 ```
 mkdir nodebot && cd nodebot;
 
 npm install johnny-five;
 
 ```
+
 Now open your text editor and create a new file called "strobe.js", in that file type or paste the following:
+
 ```
 var five = require("johnny-five"),
     board = new five.Board();
@@ -68,11 +75,14 @@ board.on("ready", function() {
   // Strobe the pin on/off, defaults to 100ms phases
   led.strobe();
 });
+
 ```
 Make sure the board is plugged into your host machine (desktop, laptop, raspberry pi, etc). Now, in your terminal, type or paste the following:
+
 ```
 node strobe.js
 Troubleshooting
+
 ```
 # Firmware
 
@@ -83,6 +93,7 @@ Verify correct port and board
 Navigate to File > Examples > Firmata > StandardFirmataPlus
 Load sketch onto board.
 Packaged
+
 ```
 Install arduino package on your operating system ).
 Make a firmware folder and save this firmware.ino into it. if the link is dead again and not appearing in the Arduino IDE, use this gist backup.
@@ -98,6 +109,7 @@ List of Arduino Board identifiers (May 2017)
 
 This is a compiled list that may not be up-to-date. Use the method described above in case you can't find your board here.
 ```
+
 "arduino:avr:yun" for Arduino Yun
 "arduino:avr:uno" for Arduino/Genuino Uno
 "arduino:avr:diecimila" for Arduino Duemilanove or Diecimila
@@ -125,26 +137,34 @@ This is a compiled list that may not be up-to-date. Use the method described abo
 "arduino:avr:one" for Linino One
 "arduino:avr:unowifi" for Arduino Uno WiFi
 Other
+
 ```
 Sometimes Windows systems will fail to compile native dependencies, if you run across this case try:
 
-```npm install johnny-five --msvs_version=2012```
+```
+npm install johnny-five --msvs_version=2012
 
+```
 
 
 # Step 1:
-```Install Docker Machine
+```
+Install Docker Machine
 Install VirtualBox
+
 ```
 
 # Step 2:
 Create your local docker-machine VM
 ```
 $ docker-machine create local -d virtualbox
+
 ```
 # Step 3:
 Stop your Docker VM
-```$ docker-machine stop local ```
+```
+$ docker-machine stop local 
+```
 Now, open VirtualBox
 
 ![](/blog/img/vm1.png)
@@ -155,13 +175,17 @@ Go to settings and mount your Arduino
 
 # Step 4:
 At this point, you should be able to use your Arduino with Johnny-Five and Docker
-```$ docker run -ti --privileged node /bin/bash
+
+```
+$ docker run -ti --privileged node /bin/bash
 # mkdir test && cd test
 # npm install johnny-five
 # apt-get update && apt-get install -y vim
 # vim test.js
+
 ```
 And now for the code, the standard Johnny-Five hello world
+
 ```
 var five = require(“johnny-five”);
 var board = new five.Board();
@@ -169,9 +193,11 @@ board.on(“ready”, function() {
   var led = new five.Led(13); 
   led.blink(500); 
 });
+
 ```
 Run the code
 ```
+
 # node test.js
 ```
 If everything worked, you should see a blinking light!
@@ -179,5 +205,5 @@ If everything worked, you should see a blinking light!
 ![](/blog/img/ezgif.com-gif-maker.gif)
 
 
-reference:http://johnny-five.io
+reference: http://johnny-five.io
 
