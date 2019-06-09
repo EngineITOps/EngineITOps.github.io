@@ -17,7 +17,7 @@
 
 # Golang 
 - [ ]
-- [ ]
+- [x] 34.conversion between array and slice - programming in go - https://engineitops.icu/Conversion-between-array-and-slice
 - [x] 33.prefix suffix - programming in go - https://engineitops.icu/presuffix-golang
 - [x] 32.struct literal - programming in go - https://engineitops.icu/struct-literal-golang
 - [x] 31.pointers to structs - programming in go - https://engineitops.icu/Pointers-to-structs
