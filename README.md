@@ -16,7 +16,9 @@
 
 
 # Golang 
-- [ ]
+- [x] 37.interface - programming in go - https://engineitops.icu/interface_golang
+- [x] 36.Variadic functions - programming in go - https://engineitops.icu/Go_Variadic_functions
+- [x] 35.Methods - programming in go - https://engineitops.icu/Go_methods
 - [x] 34.conversion between array and slice - programming in go - https://engineitops.icu/Conversion-between-array-and-slice
 - [x] 33.prefix suffix - programming in go - https://engineitops.icu/presuffix-golang
 - [x] 32.struct literal - programming in go - https://engineitops.icu/struct-literal-golang
