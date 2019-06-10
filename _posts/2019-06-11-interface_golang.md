@@ -51,6 +51,8 @@ func main() {
     myFunc(my_age)
 }
 ```
+
+![](https://github.com/EngineITOps/EngineITOps.github.io/blob/master/blog/img/Screenshot%202019-06-11%20at%201.59.16%20AM.png)
 Its table of method pointers is build through the runtime reflection capability.
 Types (like structs) can have the method set of the interface implemented;
 the implementation contains for each method real code how to act on a variable of that type: they implement the interface, the method set forms the interface of that type. 
