@@ -104,7 +104,8 @@ Because of this we can assign a variable of type Square to a variable of the int
 Now the interface variable contains a reference to the Square variable and through it we can call the method `Area()` on Square. Of course you could call the method immediately on the Square instance sq1. `Area()`, but the novel thing is that we can call it on the interface instance, thereby generalizing the call. 
 The interface variable both contains the value of the receiver instance and a pointer to the appropriate method in a method table.
 
-```package main
+```
+package main
 import "fmt"
     
 type stockPosition struct {
@@ -112,7 +113,7 @@ type stockPosition struct {
            sharePrice float32
            count float32
 }
-/* method to determine the value of a stock position */
+// method to determine the value of a stock position 
 
 func (s stockPosition) getValue() float32 {
      return s.sharePrice * s.count
@@ -122,17 +123,17 @@ type car struct {
      model string
      price float32
 }
-/* method to determine the value of a car */
+// method to determine the value of a car 
 
 func (c car) getValue() float32 {
      return c.price
 }
-/* contract that defines different things that have value */
+// contract that defines different things that have value
 
 type valuable interface {
      getValue() float32
 }
-/* anything that satisfies the “valuable” interface is accepted */
+// anything that satisfies the “valuable” interface is accepted 
 
 func showValue(asset valuable) {
      fmt.Printf("Value of the asset is %f\n", asset.getValue())
