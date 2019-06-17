@@ -67,3 +67,4 @@ Many companies of various sizes are using their global services with CockroachDB
 e.g. Baidu, kindred futures and heroic Labs.
 
 
+[![ko-fi](https://www.ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/K3K0E60M)
