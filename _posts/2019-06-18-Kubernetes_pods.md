@@ -83,3 +83,4 @@ curl http://$NODE_IP:$NODE_PORT/users/1
 ```
 kubectl create -f web-rc.yml
 curl http://$NODE_IP:$NODE_PORT/users/1
+```
