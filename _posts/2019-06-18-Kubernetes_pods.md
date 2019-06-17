@@ -22,7 +22,9 @@ Simple tutorial to demonstrate the concept of packaging multiple containers into
  
  
 clone this repo
-```https://github.com/sangam14/Multi-Container-Pods-in-Kubernetes.git```
+```
+https://github.com/sangam14/Multi-Container-Pods-in-Kubernetes.git
+```
 
 Make sure that you have access to a Kubernetes cluster.
 
@@ -63,6 +65,7 @@ export NODE_PORT=<NODE_PORT>
 curl http://$NODE_IP:$NODE_PORT/init
 ```
 ## Insert some sample data
+
 ```
 curl -i -H "Content-Type: application/json" -X POST -d '{"uid": "1", "user":"John Doe"}' http://$NODE_IP:$NODE_PORT/users/add
 curl -i -H "Content-Type: application/json" -X POST -d '{"uid": "2", "user":"Jane Doe"}' http://$NODE_IP:$NODE_PORT/users/add
@@ -71,15 +74,18 @@ curl -i -H "Content-Type: application/json" -X POST -d '{"uid": "4", "user":"Mik
 ```
 
 ## Access the data 
+
 ```
 curl http://$NODE_IP:$NODE_PORT/users/1
 ```
 ## The second time you access the data, it appends '(c)' indicating that it is pulled from the Redis cache
+
 ```
 curl http://$NODE_IP:$NODE_PORT/users/1
 ```
 
 ## Create 10 Replica Sets and check the data
+
 ```
 kubectl create -f web-rc.yml
 curl http://$NODE_IP:$NODE_PORT/users/1
