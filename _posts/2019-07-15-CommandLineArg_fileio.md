@@ -98,7 +98,8 @@ Hello Gopher!
 
 The answer is [hello.go]
 
-```package main
+```
+package main
 
 import (
 	"flag"
